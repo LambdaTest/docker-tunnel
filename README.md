@@ -42,6 +42,8 @@ set LT_ACCESS_KEY="YOUR_ACCESS_KEY"
 
 The entrypoint of the image is set to the tunnel binary with no extra arguments. Run the image without any arguments to see the help text.
 
+The image is also published on GitHub Container Registry as `ghcr.io/lambdatest/tunnel` (same tags), which avoids Docker Hub pull limits in CI. Replace `lambdatest/tunnel` with `ghcr.io/lambdatest/tunnel` in any command below.
+
 This image supports all the tunnel modifier [flags available](https://www.lambdatest.com/support/docs/lambda-tunnel-modifiers/) in the tunnel command line binary, and passes them as-is to the entry point.
 
 #### Version
